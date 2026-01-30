@@ -100,3 +100,10 @@ InitTestScene*.unity*
 
 # Rider ide files
 .idea/
+
+# Wwise files
+.cache
+*.akd
+*.prof
+*.validationcache
+*/Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset*
