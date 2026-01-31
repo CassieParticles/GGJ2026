@@ -40,7 +40,7 @@
     max-width: 138px;
     align-items: center;
     flex-direction: column;
-    top: -73px;
+    top: -387px;
 }
 
 .unity-image {

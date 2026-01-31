@@ -14,12 +14,12 @@ public class UIController : MonoBehaviour
     private void Awake()
     {
         ui = GetComponent<UIDocument>().rootVisualElement;
-        
+        Debug.Log("Awake");
         }
     
    private void OnEnable()
     {
-        playButton = ui.Q<Button>("Play");
+        playButton = ui.Q<Button>("Start");
         playButton.clicked += OnPlayButtonClicked;
         optionsButton = ui.Q<Button>("Settings");
         optionsButton.clicked += OnOptionsButtonClicked;
@@ -30,6 +30,7 @@ public class UIController : MonoBehaviour
 
     private void OnQuitButtonClicked()
     {
+        Debug.Log("Quit");
         Application.Quit();
 
     }
@@ -39,6 +40,7 @@ public class UIController : MonoBehaviour
     }
     private void OnPlayButtonClicked()
     {
+        Debug.Log("");
         SceneManager.LoadSceneAsync(1);
         //gameObject.SetActive(false);
     } 
