@@ -131,43 +131,59 @@ public class VolumeSlider : MonoBehaviour
         //Updates Slider to default
         mainValue = mainVolumeDefault;
         mainSlider.value = mainValue;
+        mainText.text = mainValue.ToString("#.00");
 
         musicValue = musicVolumeDefault;
         musicSlider.value = musicValue;
+        musicText.text = musicValue.ToString("#.00");
 
         sfxValue = sfxVolumeDefault;
         sfxSlider.value = sfxValue;
+        sfxText.text = sfxValue.ToString("#.00");
 
         sharkValue = sharkVolumeDefault;
         sharkSlider.value = sharkValue;
+        sharkText.text = sharkValue.ToString("#.00");
 
         beeValue = beeVolumeDefault;
         beeSlider.value = beeValue;
+        beeText.text = beeValue.ToString("#.00");
 
         alligatorValue = alligatorVolumeDefault;
         alligatorSlider.value = alligatorValue;
+        alligatorText.text = alligatorValue.ToString("#.00");
 
         skunkValue = skunkVolumeDefault;
         skunkSlider.value = skunkValue;
+        skunkText.text = skunkValue.ToString("#.00");
         Save();
 
     }
 
     private void Mute()
     {
+        //force saves the current main volume
+        //sets the script value to 0
+        //updates wwise
+        //sets the slider and the text to 0
+
         PlayerPrefs.SetFloat("mainValue", mainValue);
         mainValue = 0f;
-        //insert wwise code here
+        AkUnitySoundEngine.SetRTPCValue("MainVolume", mainValue);
         mainSlider.value = mainValue;
+        mainText.text = mainValue.ToString("#.00");
 
 
     }
     private void UnMute()
     {
+        //updates the script value to saved value
+        //updates wwise to the value
+        //sets the slider and the text to that value
         mainValue = PlayerPrefs.GetFloat("mainValue", mainVolumeDefault);
+        AkUnitySoundEngine.SetRTPCValue("MainVolume", mainValue);
         mainSlider.value = mainValue;
-        //insert wwise code here
-        mainSlider.value = mainValue;
+        mainText.text = mainValue.ToString("#.00");
 
 
     }
