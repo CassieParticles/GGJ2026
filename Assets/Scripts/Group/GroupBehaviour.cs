@@ -44,6 +44,14 @@ public class GroupBehaviour : MonoBehaviour
         playerPresent = false;
     }
 
+    private void OnValidate()
+    {
+        if (!SetAssets())
+        {
+            return;
+        }
+    }
+
     private bool SetAssets()
     {
         //Asset sheet is null
