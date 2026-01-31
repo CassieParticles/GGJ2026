@@ -1,0 +1,49 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "348963605",
+    "Type": "Bus",
+    "GUID": "{F51DAE85-C605-4815-B645-CF76A797EF6A}",
+    "Language": "SFX",
+    "Hash": "{CB75C634-5F30-A8BC-E5D7-CA602EDD1D95}",
+    "ObjectPath": "Reverb",
+    "ShortName": "Reverb",
+    "Path": "Bus/Reverb.bnk",
+    "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "48620415",
+       "Name": "Have_U_Ever_Been_Outside",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Exteriors\\Have_U_Ever_Been_Outside",
+       "GUID": "{FE29AE8D-FD86-4652-A95D-68D32F5760EC}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      }
+     ]
+    },
+    "AuxBusses": [
+     {
+      "Id": "348963605",
+      "Name": "Reverb",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverb",
+      "GUID": "{F51DAE85-C605-4815-B645-CF76A797EF6A}",
+      "Color": "10",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "48620415"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "FileHash": "{7A135951-4262-AABB-C85D-A3E74FDEDB1B}"
+ }
+}

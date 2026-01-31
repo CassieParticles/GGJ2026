@@ -1,6 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{7D6A41D4-351A-4F86-BBEC-5864971228E1}" SchemaVersion="123">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{7D6A41D4-351A-4F86-BBEC-5864971228E1}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{7D6A41D4-351A-4F86-BBEC-5864971228E1}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="startgame" ID="{AF722B95-FC01-4FE3-9D25-8CAEAEE71CE1}"/>
+				<Event Name="anger_alligators" ID="{0896C57D-CDF5-47AB-8450-A5BA4474A46C}">
+					<ChildrenList>
+						<Action Name="" ID="{89AAC7E8-4B1C-4F72-9800-9D268B586933}" ShortID="700955054">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_npc_anger_alligators" ID="{3124A0C2-2772-453B-83D8-2C02C9D88AB8}" WorkUnitID="{2EA5D969-6C4E-4CD0-A1E8-8A96277311CF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="anger_bees" ID="{7DAD29F5-EAE1-4C25-B46E-51492C40B2C6}">
+					<ChildrenList>
+						<Action Name="" ID="{6EF5A7A3-791D-4757-8854-457A91C82114}" ShortID="852239968">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_npc_anger_bees" ID="{B74D47D4-093F-4446-BB9F-90AB36A0C316}" WorkUnitID="{2EA5D969-6C4E-4CD0-A1E8-8A96277311CF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="anger_skunks" ID="{9F1390A4-2D82-4840-B297-FFE39168DBE3}">
+					<ChildrenList>
+						<Action Name="" ID="{5A9D7B4E-FF28-4F83-97F1-CEBB13AB7FA4}" ShortID="829127281">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_npc_anger_skunks" ID="{ECB3C672-F55C-4B75-ABCD-ADEDF8B8246E}" WorkUnitID="{2EA5D969-6C4E-4CD0-A1E8-8A96277311CF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="anger_sharks" ID="{015A6C38-A71D-4766-A844-69470CC3F106}">
+					<ChildrenList>
+						<Action Name="" ID="{C39A88EB-CD3E-4AF9-A6A4-0EE2B6CC8E8E}" ShortID="25111083">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_npc_anger_sharks" ID="{FCBF4E65-5E78-44B1-BF9D-56A1D733990D}" WorkUnitID="{2EA5D969-6C4E-4CD0-A1E8-8A96277311CF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

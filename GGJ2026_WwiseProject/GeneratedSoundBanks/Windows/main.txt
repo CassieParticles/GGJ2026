@@ -1,0 +1,13 @@
+Event	ID	Name			Wwise Object Path	Notes
+	140377575	anger_sharks			\Default Work Unit\anger_sharks	
+	1521187885	startgame			\Default Work Unit\startgame	
+	1729939973	anger_alligators			\Default Work Unit\anger_alligators	
+	2049569208	anger_skunks			\Default Work Unit\anger_skunks	
+	3846074282	anger_bees			\Default Work Unit\anger_bees	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	18800913	sfx_npc_anger_bees	C:\Users\Test\GitHub\GGJ2026\GGJ2026_WwiseProject\.cache\61\{618ACD72-44C7-D4E4-2738-A95420E94E46}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Anger_Sounds\sfx_npc_anger_bees		595448
+	64118195	sfx_npc_anger_skunks	C:\Users\Test\GitHub\GGJ2026\GGJ2026_WwiseProject\.cache\B7\{B7D87E44-462E-4B29-4E34-39B0AC8C6E9F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Anger_Sounds\sfx_npc_anger_skunks		595448
+	367421371	sfx_npc_anger_sharks	C:\Users\Test\GitHub\GGJ2026\GGJ2026_WwiseProject\.cache\32\{32DA5842-CF30-C54C-C9D2-BA522FA070DC}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Anger_Sounds\sfx_npc_anger_sharks		595448
+	535792069	sfx_npc_anger_alligators	C:\Users\Test\GitHub\GGJ2026\GGJ2026_WwiseProject\.cache\10\{10A005F0-378E-AC1F-B3A7-2D0C94009DF4}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Anger_Sounds\sfx_npc_anger_alligators		595448
+

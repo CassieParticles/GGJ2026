@@ -1,0 +1,141 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "3161908922",
+    "Type": "User",
+    "GUID": "{90F78A16-DC33-4041-847A-0D58A7709942}",
+    "Language": "SFX",
+    "Hash": "{A71D2D0B-8E5B-43B2-8157-323499B0DAEC}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\main",
+    "ShortName": "main",
+    "Path": "main.bnk",
+    "Media": [
+     {
+      "Id": "18800913",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sfx_npc_anger_bees.wav",
+      "CachePath": "61/{618ACD72-44C7-D4E4-2738-A95420E94E46}.wem"
+     },
+     {
+      "Id": "64118195",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sfx_npc_anger_skunks.wav",
+      "CachePath": "B7/{B7D87E44-462E-4B29-4E34-39B0AC8C6E9F}.wem"
+     },
+     {
+      "Id": "367421371",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sfx_npc_anger_sharks.wav",
+      "CachePath": "32/{32DA5842-CF30-C54C-C9D2-BA522FA070DC}.wem"
+     },
+     {
+      "Id": "535792069",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sfx_npc_anger_alligators.wav",
+      "CachePath": "10/{10A005F0-378E-AC1F-B3A7-2D0C94009DF4}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1729939973",
+      "Name": "anger_alligators",
+      "ObjectPath": "\\Events\\Default Work Unit\\anger_alligators",
+      "GUID": "{0896C57D-CDF5-47AB-8450-A5BA4474A46C}",
+      "DurationType": "OneShot",
+      "DurationMin": "3.3750114",
+      "DurationMax": "3.3750114",
+      "MediaRefs": [
+       {
+        "Id": "535792069"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "348963605",
+        "Name": "Reverb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverb",
+        "GUID": "{F51DAE85-C605-4815-B645-CF76A797EF6A}",
+        "Color": "10"
+       }
+      ]
+     },
+     {
+      "Id": "3846074282",
+      "Name": "anger_bees",
+      "ObjectPath": "\\Events\\Default Work Unit\\anger_bees",
+      "GUID": "{7DAD29F5-EAE1-4C25-B46E-51492C40B2C6}",
+      "DurationType": "OneShot",
+      "DurationMin": "3.3750114",
+      "DurationMax": "3.3750114",
+      "MediaRefs": [
+       {
+        "Id": "18800913"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "348963605",
+        "Name": "Reverb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverb",
+        "GUID": "{F51DAE85-C605-4815-B645-CF76A797EF6A}",
+        "Color": "10"
+       }
+      ]
+     },
+     {
+      "Id": "140377575",
+      "Name": "anger_sharks",
+      "ObjectPath": "\\Events\\Default Work Unit\\anger_sharks",
+      "GUID": "{015A6C38-A71D-4766-A844-69470CC3F106}",
+      "DurationType": "OneShot",
+      "DurationMin": "3.3750114",
+      "DurationMax": "3.3750114",
+      "MediaRefs": [
+       {
+        "Id": "367421371"
+       }
+      ]
+     },
+     {
+      "Id": "2049569208",
+      "Name": "anger_skunks",
+      "ObjectPath": "\\Events\\Default Work Unit\\anger_skunks",
+      "GUID": "{9F1390A4-2D82-4840-B297-FFE39168DBE3}",
+      "DurationType": "OneShot",
+      "DurationMin": "3.3750114",
+      "DurationMax": "3.3750114",
+      "MediaRefs": [
+       {
+        "Id": "64118195"
+       }
+      ]
+     },
+     {
+      "Id": "1521187885",
+      "Name": "startgame",
+      "ObjectPath": "\\Events\\Default Work Unit\\startgame",
+      "GUID": "{AF722B95-FC01-4FE3-9D25-8CAEAEE71CE1}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{A34D30B7-D5C0-7D6F-A807-1BA001D4241B}"
+ }
+}
