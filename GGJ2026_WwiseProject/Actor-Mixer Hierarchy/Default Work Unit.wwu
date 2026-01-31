@@ -1,6 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{2EA5D969-6C4E-4CD0-A1E8-8A96277311CF}" SchemaVersion="123">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{2EA5D969-6C4E-4CD0-A1E8-8A96277311CF}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{2EA5D969-6C4E-4CD0-A1E8-8A96277311CF}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="19"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<Folder Name="Anger_Sounds" ID="{F0B57794-88AE-45B5-8584-B0EF9B8228A7}" ShortID="113317127">
+					<ChildrenList>
+						<Sound Name="sfx_npc_anger_alligators" ID="{3124A0C2-2772-453B-83D8-2C02C9D88AB8}" ShortID="495316048">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="19"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3B93908A-531F-4BC1-A2B7-D48CB9B4B0DC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Alligators" ID="{4EE8AFCE-7908-4245-B08C-17D73CB733FD}" WorkUnitID="{C07A1528-9B67-4F6C-BD8E-4F19ECD0B556}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Reverb" ID="{F51DAE85-C605-4815-B645-CF76A797EF6A}" WorkUnitID="{C07A1528-9B67-4F6C-BD8E-4F19ECD0B556}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_npc_anger_alligators" ID="{D8BBFAF5-F1D2-4C47-8EDC-804E18C7F56A}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_npc_anger_alligators.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="535792069"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_npc_anger_alligators" ID="{D8BBFAF5-F1D2-4C47-8EDC-804E18C7F56A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_npc_anger_bees" ID="{B74D47D4-093F-4446-BB9F-90AB36A0C316}" ShortID="182570564">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="19"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3B93908A-531F-4BC1-A2B7-D48CB9B4B0DC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Bees" ID="{C1B0F1E6-B08D-43B5-9968-DB4B075D99DB}" WorkUnitID="{C07A1528-9B67-4F6C-BD8E-4F19ECD0B556}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Reverb" ID="{F51DAE85-C605-4815-B645-CF76A797EF6A}" WorkUnitID="{C07A1528-9B67-4F6C-BD8E-4F19ECD0B556}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_npc_anger_bees" ID="{F4E73A0C-2EE9-42E6-A847-BB4A58F67DE8}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_npc_anger_bees.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="18800913"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_npc_anger_bees" ID="{F4E73A0C-2EE9-42E6-A847-BB4A58F67DE8}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_npc_anger_sharks" ID="{FCBF4E65-5E78-44B1-BF9D-56A1D733990D}" ShortID="417816042">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="19"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3B93908A-531F-4BC1-A2B7-D48CB9B4B0DC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Sharks" ID="{CE41BE50-9187-4432-AD00-78624CFC47BA}" WorkUnitID="{C07A1528-9B67-4F6C-BD8E-4F19ECD0B556}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_npc_anger_sharks" ID="{B26576EB-6DE3-42F2-B412-5BEDA11B5CE9}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_npc_anger_sharks.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="367421371"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_npc_anger_sharks" ID="{B26576EB-6DE3-42F2-B412-5BEDA11B5CE9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_npc_anger_skunks" ID="{ECB3C672-F55C-4B75-ABCD-ADEDF8B8246E}" ShortID="498116700">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="19"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3B93908A-531F-4BC1-A2B7-D48CB9B4B0DC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Skunks" ID="{83335B55-3E49-48CF-B2DD-987022F5C1AF}" WorkUnitID="{C07A1528-9B67-4F6C-BD8E-4F19ECD0B556}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_npc_anger_skunks" ID="{D4AB4F63-7E3F-4901-B329-DA2F58B0C838}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_npc_anger_skunks.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="64118195"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_npc_anger_skunks" ID="{D4AB4F63-7E3F-4901-B329-DA2F58B0C838}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>
