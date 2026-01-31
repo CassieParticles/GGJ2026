@@ -3,9 +3,9 @@
     <ui:VisualElement name="Panel" class="panel" style="flex-grow: 1;">
         <ui:VisualElement name="Menu" class="menu" style="flex-grow: 1; align-content: auto; flex-direction: column;">
             <ui:Image name="TitleImage" source="project://database/Assets/GameAssets/Groups/TEMPASSETS/evilPyro.png?fileID=2800000&amp;guid=30380e4b309b8a44e99a01526113a23e&amp;type=3#evilPyro" scale-mode="ScaleToFit" style="width: 359px; top: -19px; bottom: auto;"/>
-            <ui:Button text="Start"/>
-            <ui:Button text="Settings"/>
-            <ui:Button text="Exit"/>
+            <ui:Button text="Start" name="Start"/>
+            <ui:Button text="Settings" name="Settings"/>
+            <ui:Button text="Exit" name="Exit"/>
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
