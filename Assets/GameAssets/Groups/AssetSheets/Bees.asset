@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d48d85914024f899b6598c525a0021a, type: 3}
   m_Name: Bees
   m_EditorClassIdentifier: Assembly-CSharp::GroupAssetSheet
-  group: 0
-  personSprite: {fileID: 0}
+  group: 2
+  personSprite: {fileID: -8548098251071767425, guid: 2045339c9abd87a41ada2277d0c1849c, type: 3}

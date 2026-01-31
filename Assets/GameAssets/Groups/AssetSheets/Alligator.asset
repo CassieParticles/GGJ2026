@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d48d85914024f899b6598c525a0021a, type: 3}
   m_Name: Alligator
   m_EditorClassIdentifier: Assembly-CSharp::GroupAssetSheet
-  group: 0
-  personSprite: {fileID: 0}
+  group: 4
+  personSprite: {fileID: -7922781867503896448, guid: 30380e4b309b8a44e99a01526113a23e, type: 3}
