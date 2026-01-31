@@ -28,10 +28,10 @@ public class PenguinMovement : MonoBehaviour
         actionJ = InputSystem.actions.FindAction("Test");
 
         // Assign individual button actions
-        //upAction = InputSystem.actions.FindAction("Player/Move/Up");
-        //downAction = InputSystem.actions.FindAction("Player/Move/Down");
-        //leftAction = InputSystem.actions.FindAction("Player/Move/Left");
-        //rightAction = InputSystem.actions.FindAction("Player/Move/Right");
+        upAction = InputSystem.actions.FindAction("Player/Move/Up");
+        downAction = InputSystem.actions.FindAction("Player/Move/Down");
+        leftAction = InputSystem.actions.FindAction("Player/Move/Left");
+        rightAction = InputSystem.actions.FindAction("Player/Move/Right");
     }
 
     void OnEnable() {
@@ -43,11 +43,18 @@ public class PenguinMovement : MonoBehaviour
             actionJ.Enable();  // Enable the action to start reading input
         }
 
+        actionJ.performed += JPressed;
+
 
         if (upAction != null) upAction.Enable();
         if (downAction != null) downAction.Enable();
         if (leftAction != null) leftAction.Enable();
         if (rightAction != null) rightAction.Enable();
+    }
+
+    private void JPressed(InputAction.CallbackContext obj)
+    {
+        Debug.Log("Pressed");
     }
 
     void OnDisable() {
@@ -68,32 +75,32 @@ public class PenguinMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if (upAction != null && downAction != null && leftAction != null && rightAction != null) {
-        //    bool isUp = upAction.ReadValue<float>() > 0;    // Check if Up button is pressed
-        //    bool isDown = downAction.ReadValue<float>() > 0;  // Check if Down button is pressed
-        //    bool isLeft = leftAction.ReadValue<float>() > 0;  // Check if Left button is pressed
-        //    bool isRight = rightAction.ReadValue<float>() > 0;  // Check if Right button is pressed
-        //} else {
-        //    Debug.Log("No action");
-        //}
+        if (upAction != null && downAction != null && leftAction != null && rightAction != null) {
+            bool isUp = upAction.ReadValue<float>() > 0;    // Check if Up button is pressed
+            bool isDown = downAction.ReadValue<float>() > 0;  // Check if Down button is pressed
+            bool isLeft = leftAction.ReadValue<float>() > 0;  // Check if Left button is pressed
+            bool isRight = rightAction.ReadValue<float>() > 0;  // Check if Right button is pressed
+        } else {
+            Debug.Log("No action");
+        }
 
         if (actionJ.IsPressed()) {
             Debug.Log("what the fuck");
         }
 
-        //moveValue = action.ReadValue<Vector2>();
-        //Debug.Log(moveValue);
-        //if (moveValue.y > 0 && Mathf.Abs(moveValue.y) > Mathf.Abs(moveValue.x)) { //If input is UP
-        //    Debug.Log("UP");
-        //} else if (moveValue.y < 0 && Mathf.Abs(moveValue.y) > Mathf.Abs(moveValue.x)) { //If input is DOWN
-        //    Debug.Log("DOWN");
-        //} else if (moveValue.x < 0 && Mathf.Abs(moveValue.x) > Mathf.Abs(moveValue.y)) { //If input is LEFT
-        //    Debug.Log("LEFT");
-        //} else if (moveValue.x > 0 && Mathf.Abs(moveValue.x) > Mathf.Abs(moveValue.y)) { //If input is RIGHT
-        //    Debug.Log("RIGHT");
-        //} else { //There is no input
+        moveValue = action.ReadValue<Vector2>();
+        Debug.Log(moveValue);
+        if (moveValue.y > 0 && Mathf.Abs(moveValue.y) > Mathf.Abs(moveValue.x)) { //If input is UP
+            Debug.Log("UP");
+        } else if (moveValue.y < 0 && Mathf.Abs(moveValue.y) > Mathf.Abs(moveValue.x)) { //If input is DOWN
+            Debug.Log("DOWN");
+        } else if (moveValue.x < 0 && Mathf.Abs(moveValue.x) > Mathf.Abs(moveValue.y)) { //If input is LEFT
+            Debug.Log("LEFT");
+        } else if (moveValue.x > 0 && Mathf.Abs(moveValue.x) > Mathf.Abs(moveValue.y)) { //If input is RIGHT
+            Debug.Log("RIGHT");
+        } else { //There is no input
 
-        //}
+        }
 
         
         if (targetTransform != null) {
@@ -103,5 +110,4 @@ public class PenguinMovement : MonoBehaviour
             }
         }
     }
-
 }
