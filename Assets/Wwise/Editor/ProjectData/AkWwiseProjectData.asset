@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 6955e8c781021449803689caaaf1e718
     GuidInternal: 
-    m_lastTime: -8584317923829073819
+    m_lastTime: -8584317514054656880
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,8 +38,74 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 28157ac0679b6c4fbd8e4f19ecd0b556
     GuidInternal: 
-    m_lastTime: -8584317923829164461
+    m_lastTime: -8584317142135585685
     List:
+    - name: Alligators
+      guid: ceafe84e08794542b08c17d73cb733fd
+      id: 1834821125
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 28157ac0679b6c4fbd8e4f19ecd0b556
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SFX
+        ObjectType: 2
+        guid: cb7fc699762518479202e496e45d84c9
+      - ElementName: Characters
+        ObjectType: 2
+        guid: a7c13596df03c94ea800e6a39a624161
+      - ElementName: Alligators
+        ObjectType: 2
+        guid: ceafe84e08794542b08c17d73cb733fd
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\Characters\Alligators
+    - name: Bees
+      guid: e6f1b0c18db0b5439968db4b075d99db
+      id: 1123068842
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 28157ac0679b6c4fbd8e4f19ecd0b556
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SFX
+        ObjectType: 2
+        guid: cb7fc699762518479202e496e45d84c9
+      - ElementName: Characters
+        ObjectType: 2
+        guid: a7c13596df03c94ea800e6a39a624161
+      - ElementName: Bees
+        ObjectType: 2
+        guid: e6f1b0c18db0b5439968db4b075d99db
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\Characters\Bees
+    - name: Characters
+      guid: a7c13596df03c94ea800e6a39a624161
+      id: 1557941045
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 28157ac0679b6c4fbd8e4f19ecd0b556
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SFX
+        ObjectType: 2
+        guid: cb7fc699762518479202e496e45d84c9
+      - ElementName: Characters
+        ObjectType: 2
+        guid: a7c13596df03c94ea800e6a39a624161
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\Characters
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3803692087
@@ -54,6 +120,123 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+    - name: Music
+      guid: 3d6a876f4ccc584f9a028c2cbd7037d1
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 28157ac0679b6c4fbd8e4f19ecd0b556
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Music
+        ObjectType: 2
+        guid: 3d6a876f4ccc584f9a028c2cbd7037d1
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music
+    - name: Reverb
+      guid: 85ae1df505c61548b645cf76a797ef6a
+      id: 348963605
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 28157ac0679b6c4fbd8e4f19ecd0b556
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Reverb
+        ObjectType: 1
+        guid: 85ae1df505c61548b645cf76a797ef6a
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb
+    - name: SFX
+      guid: cb7fc699762518479202e496e45d84c9
+      id: 393239870
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 28157ac0679b6c4fbd8e4f19ecd0b556
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SFX
+        ObjectType: 2
+        guid: cb7fc699762518479202e496e45d84c9
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX
+    - name: Sharks
+      guid: 50be41ce87913244ad0078624cfc47ba
+      id: 3742407143
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 28157ac0679b6c4fbd8e4f19ecd0b556
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SFX
+        ObjectType: 2
+        guid: cb7fc699762518479202e496e45d84c9
+      - ElementName: Characters
+        ObjectType: 2
+        guid: a7c13596df03c94ea800e6a39a624161
+      - ElementName: Sharks
+        ObjectType: 2
+        guid: 50be41ce87913244ad0078624cfc47ba
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\Characters\Sharks
+    - name: Skunks
+      guid: 555b3383493ecf48b2dd987022f5c1af
+      id: 1356631480
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 28157ac0679b6c4fbd8e4f19ecd0b556
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SFX
+        ObjectType: 2
+        guid: cb7fc699762518479202e496e45d84c9
+      - ElementName: Characters
+        ObjectType: 2
+        guid: a7c13596df03c94ea800e6a39a624161
+      - ElementName: Skunks
+        ObjectType: 2
+        guid: 555b3383493ecf48b2dd987022f5c1af
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\Characters\Skunks
+    - name: UI
+      guid: e8327da442dc064cb4ae7cc22b9423c6
+      id: 1551306167
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 28157ac0679b6c4fbd8e4f19ecd0b556
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SFX
+        ObjectType: 2
+        guid: cb7fc699762518479202e496e45d84c9
+      - ElementName: UI
+        ObjectType: 2
+        guid: e8327da442dc064cb4ae7cc22b9423c6
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\UI
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -66,8 +249,22 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 80a7dfb8db8b8647ac60ad77f25b68e5
     GuidInternal: 
-    m_lastTime: -8584317923829113718
-    List: []
+    m_lastTime: -8584317142135178913
+    List:
+    - name: main
+      guid: 168af79033dc4140847a0d58a7709942
+      id: 3161908922
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 80a7dfb8db8b8647ac60ad77f25b68e5
+      - ElementName: main
+        ObjectType: 7
+        guid: 168af79033dc4140847a0d58a7709942
+      Path: SoundBanks\Default Work Unit\main
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -80,8 +277,93 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: d4416a7d1a35864fbbec5864971228e1
     GuidInternal: 
-    m_lastTime: -8584317923829204366
-    List: []
+    m_lastTime: -8584317142136187416
+    List:
+    - name: anger_alligators
+      guid: 7dc59608f5cdab478450a5ba4474a46c
+      id: 1729939973
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d4416a7d1a35864fbbec5864971228e1
+      - ElementName: anger_alligators
+        ObjectType: 3
+        guid: 7dc59608f5cdab478450a5ba4474a46c
+      Path: Events\Default Work Unit\anger_alligators
+      maxAttenuation: 0
+      maxDuration: 3.3750114
+      minDuration: 3.3750114
+    - name: anger_bees
+      guid: f529ad7de1ea254cb46e51492c40b2c6
+      id: 3846074282
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d4416a7d1a35864fbbec5864971228e1
+      - ElementName: anger_bees
+        ObjectType: 3
+        guid: f529ad7de1ea254cb46e51492c40b2c6
+      Path: Events\Default Work Unit\anger_bees
+      maxAttenuation: 0
+      maxDuration: 3.3750114
+      minDuration: 3.3750114
+    - name: anger_sharks
+      guid: 386c5a011da76647a84469470cc3f106
+      id: 140377575
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d4416a7d1a35864fbbec5864971228e1
+      - ElementName: anger_sharks
+        ObjectType: 3
+        guid: 386c5a011da76647a84469470cc3f106
+      Path: Events\Default Work Unit\anger_sharks
+      maxAttenuation: 0
+      maxDuration: 3.3750114
+      minDuration: 3.3750114
+    - name: anger_skunks
+      guid: a490139f822d4048b297ffe39168dbe3
+      id: 2049569208
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d4416a7d1a35864fbbec5864971228e1
+      - ElementName: anger_skunks
+        ObjectType: 3
+        guid: a490139f822d4048b297ffe39168dbe3
+      Path: Events\Default Work Unit\anger_skunks
+      maxAttenuation: 0
+      maxDuration: 3.3750114
+      minDuration: 3.3750114
+    - name: startgame
+      guid: 952b72af01fce34f9d258caeaee71ce1
+      id: 1521187885
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d4416a7d1a35864fbbec5864971228e1
+      - ElementName: startgame
+        ObjectType: 3
+        guid: 952b72af01fce34f9d258caeaee71ce1
+      Path: Events\Default Work Unit\startgame
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -94,7 +376,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 54e7ca189cdf7c40aa4dfa05dd872ec3
     GuidInternal: 
-    m_lastTime: -8584317923829184406
+    m_lastTime: -8584317514054846738
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -108,7 +390,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 55f4df5682c74b4cac9c949935d67f28
     GuidInternal: 
-    m_lastTime: -8584317923829093763
+    m_lastTime: -8584317514054676870
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -122,7 +404,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: e40fb92fa1960541988db71ca57435d1
     GuidInternal: 
-    m_lastTime: -8584317923829083792
+    m_lastTime: -8584317514054666890
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -136,7 +418,7 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 8dbd6ba8f6afbf48b3548d12f517f9d8
     GuidInternal: 
-    m_lastTime: -8584317923829083792
+    m_lastTime: -8584317514054666890
     List: []
   ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 
