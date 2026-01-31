@@ -82,7 +82,6 @@ public class GroupBehaviour : MonoBehaviour
     {
         return agitators.Count > 0 ? agitators.Dequeue() : null;
     }
-    
 
     private void FixedUpdate()
     {
@@ -91,5 +90,10 @@ public class GroupBehaviour : MonoBehaviour
         
         //Additional anger from agitators
         anger += agitators.Count * angerAgitatorBuildRate * Time.fixedDeltaTime;
+
+        if (anger > angerLoseCap)
+        {
+            //TODO: Add losing functionality
+        }
     }
 }
