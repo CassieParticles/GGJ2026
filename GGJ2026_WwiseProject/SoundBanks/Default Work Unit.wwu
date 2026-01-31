@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{B8DFA780-8BDB-4786-AC60-AD77F25B68E5}" SchemaVersion="123">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{B8DFA780-8BDB-4786-AC60-AD77F25B68E5}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{B8DFA780-8BDB-4786-AC60-AD77F25B68E5}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="main" ID="{90F78A16-DC33-4041-847A-0D58A7709942}">
+					<ObjectInclusionList>
+						<ObjectRef Name="anger_sharks" ID="{015A6C38-A71D-4766-A844-69470CC3F106}" WorkUnitID="{7D6A41D4-351A-4F86-BBEC-5864971228E1}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="anger_alligators" ID="{0896C57D-CDF5-47AB-8450-A5BA4474A46C}" WorkUnitID="{7D6A41D4-351A-4F86-BBEC-5864971228E1}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="anger_skunks" ID="{9F1390A4-2D82-4840-B297-FFE39168DBE3}" WorkUnitID="{7D6A41D4-351A-4F86-BBEC-5864971228E1}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="anger_bees" ID="{7DAD29F5-EAE1-4C25-B46E-51492C40B2C6}" WorkUnitID="{7D6A41D4-351A-4F86-BBEC-5864971228E1}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="startgame" ID="{AF722B95-FC01-4FE3-9D25-8CAEAEE71CE1}" WorkUnitID="{7D6A41D4-351A-4F86-BBEC-5864971228E1}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundBanks>
 </WwiseDocument>

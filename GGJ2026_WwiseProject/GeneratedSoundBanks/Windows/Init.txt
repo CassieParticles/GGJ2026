@@ -1,0 +1,21 @@
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
+	1123068842	Bees			\Default Work Unit\Master Audio Bus\SFX\Characters\Bees	
+	1356631480	Skunks			\Default Work Unit\Master Audio Bus\SFX\Characters\Skunks	
+	1551306167	UI			\Default Work Unit\Master Audio Bus\SFX\UI	
+	1557941045	Characters			\Default Work Unit\Master Audio Bus\SFX\Characters	
+	1834821125	Alligators			\Default Work Unit\Master Audio Bus\SFX\Characters\Alligators	
+	3742407143	Sharks			\Default Work Unit\Master Audio Bus\SFX\Characters\Sharks	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	348963605	Reverb			\Default Work Unit\Master Audio Bus\Reverb	
+
+Effect plug-ins	ID	Name	Type				Notes
+	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+

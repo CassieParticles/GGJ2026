@@ -9,6 +9,82 @@
 							<ObjectRef Name="System" ID="{3CFC58C8-B68E-4317-B8B1-E3F1FF4D46E4}" WorkUnitID="{D512D632-FE3D-4212-9D3F-D2E3A89283DE}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="Music" ID="{6F876A3D-CC4C-4F58-9A02-8C2CBD7037D1}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="12"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</Bus>
+						<Bus Name="SFX" ID="{99C67FCB-2576-4718-9202-E496E45D84C9}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="4"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Bus Name="UI" ID="{A47D32E8-DC42-4C06-B4AE-7CC22B9423C6}">
+									<PropertyList>
+										<Property Name="Color" Type="int16" Value="2"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+									</PropertyList>
+								</Bus>
+								<Bus Name="Characters" ID="{9635C1A7-03DF-4EC9-A800-E6A39A624161}">
+									<PropertyList>
+										<Property Name="Color" Type="int16" Value="19"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<Bus Name="Alligators" ID="{4EE8AFCE-7908-4245-B08C-17D73CB733FD}">
+											<PropertyList>
+												<Property Name="Color" Type="int16" Value="19"/>
+												<Property Name="OverrideColor" Type="bool" Value="True"/>
+											</PropertyList>
+										</Bus>
+										<Bus Name="Bees" ID="{C1B0F1E6-B08D-43B5-9968-DB4B075D99DB}">
+											<PropertyList>
+												<Property Name="Color" Type="int16" Value="19"/>
+												<Property Name="OverrideColor" Type="bool" Value="True"/>
+											</PropertyList>
+										</Bus>
+										<Bus Name="Sharks" ID="{CE41BE50-9187-4432-AD00-78624CFC47BA}">
+											<PropertyList>
+												<Property Name="Color" Type="int16" Value="19"/>
+												<Property Name="OverrideColor" Type="bool" Value="True"/>
+											</PropertyList>
+										</Bus>
+										<Bus Name="Skunks" ID="{83335B55-3E49-48CF-B2DD-987022F5C1AF}">
+											<PropertyList>
+												<Property Name="Color" Type="int16" Value="19"/>
+												<Property Name="OverrideColor" Type="bool" Value="True"/>
+											</PropertyList>
+										</Bus>
+									</ChildrenList>
+								</Bus>
+							</ChildrenList>
+						</Bus>
+						<AuxBus Name="Reverb" ID="{F51DAE85-C605-4815-B645-CF76A797EF6A}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList/>
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{E4F4A56A-F8B7-47F6-BD58-DAE7F9FE1B1E}" ShortID="568950478">
+												<ReferenceList>
+													<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+														<ObjectRef Name="Have_U_Ever_Been_Outside" ID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</AuxBus>
+					</ChildrenList>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>
