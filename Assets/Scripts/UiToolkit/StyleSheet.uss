@@ -1,3 +1,61 @@
 :root {
+}
 
+.panel {
+    background-color: rgb(230, 163, 217);
+}
+
+.hide {
+    display: none;
+}
+
+.menu {
+    position: relative;
+    align-items: center;
+}
+
+.unity-button {
+    justify-content: center;
+    align-self: auto;
+    align-content: flex-end;
+    -unity-text-align: middle-center;
+    flex-basis: auto;
+    flex-shrink: 1;
+    margin-top: 24px;
+    transform-origin: center;
+    border-left-width: 3px;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    border-right-width: 3px;
+    border-bottom-color: rgb(88, 60, 6);
+    border-left-color: rgb(88, 61, 6);
+    border-top-color: rgb(88, 61, 6);
+    border-right-color: rgb(88, 61, 6);
+    background-color: rgba(138, 201, 180, 0.65);
+    flex-grow: 1;
+    width: 200px;
+    height: 100px;
+    min-width: -20px;
+    min-height: 0;
+    max-height: 53px;
+    max-width: 138px;
+    align-items: center;
+    flex-direction: column;
+    top: -73px;
+}
+
+.unity-image {
+    top: 0;
+    bottom: 200px;
+    flex-grow: 1;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.unity-button:hover {
+    background-color: rgb(255, 204, 0);
+    scale: 1.2 1.2;
+    transition-property: scale;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in-out;
 }
