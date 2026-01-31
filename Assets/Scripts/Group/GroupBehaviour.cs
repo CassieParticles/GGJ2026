@@ -18,36 +18,78 @@ public enum Groups
 public class GroupBehaviour : MonoBehaviour
 {
     [SerializeField] private Groups group;
+    [SerializeField] private GroupAssetSheet assetSheet;
     
     [SerializeField] private float angerBuildRate = 5;
     [SerializeField] private float angerPlayerDecayRate = 25;
     [SerializeField] private float angerAgitatorBuildRate = 10;
+    [SerializeField] private float angerLoseCap = 100;
+    private float anger;
+
+    private bool playerPresent;
 
     private Queue<AgitatorBehaviour> agitators;
     
     private void Awake()
     {
-        //Get the asset sheet
-        GroupAssetSheet assetSheet = AssetManager.GetSheet(group);
-        
-        //Ensure the asset sheet was retrieved successfully
-        if (!assetSheet)
+        if (!SetAssets())
         {
-            //Log the error so bug can be tracked easier
-            Debug.LogError("ERROR: GROUP NOT SET");
-            //Do not run behaviour with missing assets (disable script and immediately return)
+            //Setting up assets was unsuccessful, exit
             this.enabled = false;
             return;
         }
-        //Get the sprite sheet and set its sprite
+
+        agitators =  new Queue<AgitatorBehaviour>();
+        anger = 0;
+        playerPresent = false;
+    }
+
+    private bool SetAssets()
+    {
+        //Asset sheet is null
+        if (!assetSheet)
+        {
+            Debug.LogError("ERROR: GROUP NOT SET");
+            return false;
+        }
+
         SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.sprite = assetSheet.PersonSprite;
-        
-        agitators =  new Queue<AgitatorBehaviour>();
+
+        return true;
     }
+
+    //Tell the group the player has arrived
+    public void PlayerArrive()
+    {
+        playerPresent = true;
+    }
+
+    //Tell the group the player has left
+    public void PlayerLeave()
+    {
+        playerPresent = false;
+    }
+
+    //Add a new agitator to the group behaviour
+    public void AddAgitator(AgitatorBehaviour agitator)
+    {
+        agitators.Enqueue(agitator);
+    }
+
+    //Remove the agitator from the group, and return it (returns null if no agitators present)
+    public AgitatorBehaviour GetAgitator()
+    {
+        return agitators.Count > 0 ? agitators.Dequeue() : null;
+    }
+    
 
     private void FixedUpdate()
     {
+        //Increase/decrease anger based on if player is present
+        anger += (playerPresent ? -angerPlayerDecayRate : angerBuildRate) * Time.fixedDeltaTime;
         
+        //Additional anger from agitators
+        anger += agitators.Count * angerAgitatorBuildRate * Time.fixedDeltaTime;
     }
 }
