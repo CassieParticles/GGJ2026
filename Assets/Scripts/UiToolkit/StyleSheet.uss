@@ -3,16 +3,15 @@
 
 .panel {
     background-color: rgb(230, 163, 217);
+    align-items: center;
+    flex-grow: 1;
 }
 
 .hide {
     display: none;
 }
 
-.menu {
-    position: relative;
-    align-items: center;
-}
+
 
 .unity-button {
     justify-content: center;
@@ -58,4 +57,8 @@
     transition-property: scale;
     transition-duration: 0.25s;
     transition-timing-function: ease-in-out;
+}
+
+.unity-button:focus {
+    background-color: rgb(145, 118, 7);
 }

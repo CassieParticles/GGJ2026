@@ -2,18 +2,22 @@ using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEngine.SceneManagement;
 
+
 public class UIController : MonoBehaviour
 {
+
     public VisualElement ui;
 
     public Button playButton;
     public Button optionsButton;
-    public Button quitButton;
+  public Button quitButton;
     private void Awake()
     {
         ui = GetComponent<UIDocument>().rootVisualElement;
-    }
-    private void OnEnable()
+        
+        }
+    
+   private void OnEnable()
     {
         playButton = ui.Q<Button>("Play");
         playButton.clicked += OnPlayButtonClicked;
@@ -36,5 +40,6 @@ public class UIController : MonoBehaviour
     private void OnPlayButtonClicked()
     {
         SceneManager.LoadSceneAsync(1);
-    }
+        //gameObject.SetActive(false);
+    } 
 }
