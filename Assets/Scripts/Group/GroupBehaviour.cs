@@ -30,6 +30,20 @@ public class GroupBehaviour : MonoBehaviour
 
     private Queue<AgitatorBehaviour> agitators;
     
+    static Dictionary<Groups, GroupBehaviour> groups = new Dictionary<Groups, GroupBehaviour>();
+
+    public static GroupBehaviour GetGroup(Groups group)
+    {
+        if (!groups.TryGetValue(group, out GroupBehaviour groupBehaviour))
+        {
+            Debug.LogError("ERROR: GROUP NOT FOUND");
+            return null;
+        }
+
+        return groupBehaviour;
+    }
+    
+    
     private void Awake()
     {
         if (!SetAssets())
@@ -39,9 +53,19 @@ public class GroupBehaviour : MonoBehaviour
             return;
         }
 
+        if (group == Groups.Null)
+        {
+            Debug.LogError("ERROR: GROUP NOT SET");
+            this.enabled = false;
+            return;
+        }
+
         agitators =  new Queue<AgitatorBehaviour>();
         anger = 0;
         playerPresent = false;
+        
+        
+        groups.Add(group, this);
     }
 
     private void OnValidate()
@@ -57,7 +81,7 @@ public class GroupBehaviour : MonoBehaviour
         //Asset sheet is null
         if (!assetSheet)
         {
-            Debug.LogError("ERROR: GROUP NOT SET");
+            Debug.LogError("ERROR: NO ASSET SHEET FOUND");
             return false;
         }
 
