@@ -5,20 +5,16 @@ using UnityEngine;
 
 public class TestAssetManager : MonoBehaviour
 {
-    [SerializeField] private Groups group;
+    [SerializeField] private GroupAssetSheet group;
     private SpriteRenderer spriteRenderer;
 
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
-    }
 
-    private void FixedUpdate()
-    {
-        GroupAssetSheet assetSheet = AssetManager.GetSheet(group);
-        if (assetSheet != null)
+        if (group)
         {
-            spriteRenderer.sprite = assetSheet.PersonSprite;
+            spriteRenderer.sprite = group.PersonSprite;
         }
     }
 }

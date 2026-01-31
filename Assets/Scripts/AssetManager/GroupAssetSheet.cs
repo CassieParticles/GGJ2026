@@ -10,14 +10,4 @@ public class GroupAssetSheet : ScriptableObject
 
     public Groups Group => group;
     public Sprite PersonSprite => personSprite;
-
-    private void Awake()
-    {
-        AssetManager.AddSheet(this);
-    }
-
-    private void OnValidate()
-    {
-        AssetManager.AddSheet(this);
-    }
 }
