@@ -3,7 +3,7 @@
     <ui:VisualElement name="panel" class="panel">
         <ui:VisualElement name="ButBox" class="ButBox" style="flex-grow: 1;">
             <ui:Button text="Play Again" name="Play"/>
-            <ui:Button text="Quit" name="Quit" style="white-space: nowrap;"/>
+            <ui:Button text="Main Menu" name="Quit" style="white-space: pre-wrap;"/>
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

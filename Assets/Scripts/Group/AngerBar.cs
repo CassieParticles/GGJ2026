@@ -5,33 +5,29 @@ using UnityEngine.UIElements;
 
 public class AngerBar: MonoBehaviour
 {
-    GroupBehaviour group;
+    [SerializeField] private GroupBehaviour beeGroup;
+    [SerializeField] private GroupBehaviour sharkGroup;
+    [SerializeField] private GroupBehaviour crocGroup;
+    [SerializeField] private GroupBehaviour skunkGroup;
+    
     public VisualElement gui;
-    public ProgressBar angerbar1;
-    public ProgressBar angerbar2;
-    public ProgressBar angerbar3;
-    public ProgressBar angerbar4;
+    public ProgressBar beeBar;
+    public ProgressBar sharkBar;
+    public ProgressBar crocBar;
+    public ProgressBar skunkBar;
     public float angerval1;
     public float angerval2;
     public float angerval3;
     public float angerval4;
     private void Awake()
     {
-        group = GetComponentInParent<GroupBehaviour>();
-        if (!group)
-        {
-            Debug.LogError("ERROR: GROUP NOT LOCATED");
-            gameObject.SetActive(false);
-            return;
-        }
-        
         //TODO: Get GUI bar
         gui = GetComponent<UIDocument>().rootVisualElement;
         Debug.Log("I got the GUI OBJ");
-        angerbar1 = gui.Q<ProgressBar>("BeeBar");
-        angerbar2 = gui.Q<ProgressBar>("SharkBar");
-        angerbar3 = gui.Q<ProgressBar>("CrocBar");
-        angerbar4 = gui.Q<ProgressBar>("SkunkBar");
+        beeBar = gui.Q<ProgressBar>("BeeBar");
+        sharkBar = gui.Q<ProgressBar>("SharkBar");
+        crocBar = gui.Q<ProgressBar>("CrocBar");
+        skunkBar = gui.Q<ProgressBar>("SkunkBar");
         Debug.Log("BarsFound");
 
     }
@@ -49,6 +45,23 @@ public class AngerBar: MonoBehaviour
     private void FixedUpdate()
     {
         //TODO: Set GUI bar to value
+        angerval1 = beeGroup.Anger;
+        angerval2 = sharkGroup.Anger;
+        angerval3 = crocGroup.Anger;
+        angerval4 = skunkGroup.Anger;
+
+        beeBar.value = beeGroup.Anger;
+        sharkBar.value = sharkGroup.Anger;
+        crocBar.value = crocGroup.Anger;
+        skunkBar.value = skunkGroup.Anger;
+
+
         // if bar hits zero Lose();
     }
+    private void Lose()
+    {
+    
+    
+    }
+
 }

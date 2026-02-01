@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using Unity.VisualScripting;
-using UnityEditor.PackageManager;
+
 using UnityEngine;
 
 [Serializable]
@@ -33,14 +32,13 @@ public class GroupBehaviour : MonoBehaviour
     private bool angerSoundPlaying;
 
     private float anger;
+    public float Anger => anger;
 
     private bool playerPresent;
 
     private Queue<AgitatorBehaviour> agitators;
     
     static Dictionary<Groups, GroupBehaviour> groups = new Dictionary<Groups, GroupBehaviour>();
-
-    public float Anger => anger;
 
     public static GroupBehaviour GetGroup(Groups group)
     {
@@ -80,7 +78,11 @@ public class GroupBehaviour : MonoBehaviour
         agitators =  new Queue<AgitatorBehaviour>();
         anger = 0;
         playerPresent = false;
-        
+
+        if (!groups.TryAdd(group, this))
+        {
+            groups[group] = this;
+        }
         
         groups.Add(group, this);
 
@@ -142,7 +144,8 @@ public class GroupBehaviour : MonoBehaviour
     {
         //Increase/decrease anger based on if player is present
         anger += (playerPresent ? -angerPlayerDecayRate : angerBuildRate) * Time.fixedDeltaTime;
-
+        anger = Mathf.Max(anger, 0);
+        
         //Additional anger from agitators
         anger += agitators.Count * angerAgitatorBuildRate * Time.fixedDeltaTime;
 
@@ -155,7 +158,6 @@ public class GroupBehaviour : MonoBehaviour
         {
             angerSound.Post(gameObject);
             angerSoundPlaying = true;
-
         }
 
         if (anger <= soundReset &&  angerSoundPlaying == true)
