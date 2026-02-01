@@ -83,8 +83,6 @@ public class GroupBehaviour : MonoBehaviour
         {
             groups[group] = this;
         }
-        
-        groups.Add(group, this);
 
         angerSoundPlaying = false;
     }
