@@ -35,8 +35,6 @@ public class GroupBehaviour : MonoBehaviour
     
     static Dictionary<Groups, GroupBehaviour> groups = new Dictionary<Groups, GroupBehaviour>();
 
-    public float Anger => anger;
-
     public static GroupBehaviour GetGroup(Groups group)
     {
         if (!groups.TryGetValue(group, out GroupBehaviour groupBehaviour))
