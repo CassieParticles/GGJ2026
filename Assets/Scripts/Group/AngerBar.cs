@@ -49,4 +49,10 @@ public class AngerBar: MonoBehaviour
         
         // if bar hits zero Lose();
     }
+    private void Lose()
+    {
+    
+    
+    }
+
 }

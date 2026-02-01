@@ -2,22 +2,22 @@
     <Style src="project://database/Assets/UI%20Toolkit/GUIStyle.uss?fileID=7433441132597879392&amp;guid=baafb37014bb4d1479cf20b65a2191d0&amp;type=3#GUIStyle"/>
     <ui:VisualElement name="root" style="flex-grow: 1;">
         <ui:VisualElement name="GUIBackground" style="flex-grow: 1; -unity-background-scale-mode: scale-to-fit; background-color: rgba(0, 0, 0, 0);">
-            <ui:ProgressBar value="22" title="my-progress" class="HorizontalBar">
+            <ui:ProgressBar value="22" title="my-progress" name="SkunkBar" class="HorizontalBar">
                 <Bindings>
                     <ui:DataBinding property="value" data-source-path="angerval4" data-source-type="AngerBar, Assembly-CSharp" binding-mode="ToTarget"/>
                 </Bindings>
             </ui:ProgressBar>
-            <ui:ProgressBar value="24.8" title="my-progress" class="HorizontalBar" style="transform-origin: center -2011%;">
+            <ui:ProgressBar value="24.8" title="my-progress" name="SharkBar" class="HorizontalBar" style="transform-origin: center -2011%;">
                 <Bindings>
                     <ui:DataBinding property="value" data-source-path="angerval2" data-source-type="AngerBar, Assembly-CSharp" binding-mode="ToTarget"/>
                 </Bindings>
             </ui:ProgressBar>
-            <ui:ProgressBar value="22" title="my-progress" class="VertBar">
+            <ui:ProgressBar value="22" title="my-progress" name="CrocBar" class="VertBar">
                 <Bindings>
                     <ui:DataBinding property="value" data-source-path="angerval3" data-source-type="AngerBar, Assembly-CSharp" binding-mode="ToTarget"/>
                 </Bindings>
             </ui:ProgressBar>
-            <ui:ProgressBar value="22" title="my-progress" class="VertBar" style="left: 1704px;">
+            <ui:ProgressBar value="22" title="my-progress" name="BeeBar" class="VertBar" style="left: 1704px;">
                 <Bindings>
                     <ui:DataBinding property="value" data-source-path="angerval1" data-source-type="AngerBar, Assembly-CSharp" binding-mode="ToTarget"/>
                 </Bindings>
