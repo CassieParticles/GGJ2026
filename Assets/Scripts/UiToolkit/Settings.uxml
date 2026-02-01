@@ -2,7 +2,7 @@
     <Style src="project://database/Assets/Scripts/UiToolkit/Settings.uss?fileID=7433441132597879392&amp;guid=b235cd1b0c6a4d54f80f872e835ef598&amp;type=3#Settings"/>
     <ui:VisualElement name="Panel" class="Panel-Background window">
         <ui:VisualElement name="Window" class="window">
-            <ui:Button text="Button" style="height: 184px;"/>
+            <ui:Label text="Settings" class="title" style="height: 92px;"/>
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

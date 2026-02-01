@@ -21,3 +21,11 @@
     display: flex;
     -unity-background-image-tint-color: rgb(255, 255, 255);
 }
+
+.title {
+    height: 37px;
+    background-color: rgb(255, 252, 242);
+    -unity-font-style: bold;
+    font-size: 66px;
+    -unity-text-align: middle-center;
+}
