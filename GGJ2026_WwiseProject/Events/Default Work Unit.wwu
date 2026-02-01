@@ -3,7 +3,17 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{7D6A41D4-351A-4F86-BBEC-5864971228E1}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="startgame" ID="{AF722B95-FC01-4FE3-9D25-8CAEAEE71CE1}"/>
+				<Event Name="startgame" ID="{AF722B95-FC01-4FE3-9D25-8CAEAEE71CE1}">
+					<ChildrenList>
+						<Action Name="" ID="{DCEB98AF-5846-4485-872D-18C292CC3831}" ShortID="135023339">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="mx_zoo_01" ID="{532AAA48-667A-46CF-8F42-EC710CF96E19}" WorkUnitID="{2EA5D969-6C4E-4CD0-A1E8-8A96277311CF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 				<Event Name="anger_alligators" ID="{0896C57D-CDF5-47AB-8450-A5BA4474A46C}">
 					<ChildrenList>
 						<Action Name="" ID="{89AAC7E8-4B1C-4F72-9800-9D268B586933}" ShortID="700955054">
