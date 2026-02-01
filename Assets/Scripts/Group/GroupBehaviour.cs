@@ -72,9 +72,12 @@ public class GroupBehaviour : MonoBehaviour
         agitators =  new Queue<AgitatorBehaviour>();
         anger = 0;
         playerPresent = false;
+
+        if (!groups.TryAdd(group, this))
+        {
+            groups[group] = this;
+        }
         
-        
-        groups.Add(group, this);
     }
 
     private void OnValidate()
