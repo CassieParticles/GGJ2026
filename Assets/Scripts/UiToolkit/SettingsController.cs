@@ -6,6 +6,7 @@ using UnityEngine.UIElements;
 
 public class SettingsController : MonoBehaviour
 {
+    [SerializeField] private GameObject menu;
     private UIDocument SetDoc;
     private VisualElement m_root;
     private bool m_IsOpen = false;

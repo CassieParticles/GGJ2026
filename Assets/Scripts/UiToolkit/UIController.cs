@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class UIController : MonoBehaviour
 {
-
+    [SerializeField] private GameObject settings;
     public VisualElement ui;
 
     public Button playButton;
@@ -37,6 +37,8 @@ public class UIController : MonoBehaviour
     private void OnOptionsButtonClicked()
     {
         Debug.Log("Options");
+        settings.SetActive(true);
+        gameObject.SetActive(false);
     }
     private void OnPlayButtonClicked()
     {

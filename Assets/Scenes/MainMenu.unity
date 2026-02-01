@@ -187,6 +187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aec78203af3737443abd40899f20d97e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIController
+  settings: {fileID: 501606987}
 --- !u!1 &501606987
 GameObject:
   m_ObjectHideFlags: 0
@@ -255,6 +256,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bd12f69e7df224458da6fb0ebf555b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  menu: {fileID: 364000628}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
