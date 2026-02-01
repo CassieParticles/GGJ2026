@@ -1,4 +1,5 @@
 ﻿
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -11,7 +12,14 @@ public class AgitatorBehaviour: MonoBehaviour
 
     private GroupBehaviour sourceGO;
     private GroupBehaviour destinationGO;
-    
+
+    public Groups Source => source;
+    public Groups Destination => destination;
+    public GroupBehaviour SourceGo => sourceGO;
+    public GroupBehaviour DestinationGo => destinationGO;
+
+    private PenguinMovement player;
+
     private bool atDestination;
     
     private bool SetAssets(GroupAssetSheet assetSheet)
@@ -29,6 +37,8 @@ public class AgitatorBehaviour: MonoBehaviour
     
     public void Initialize(Groups from, Groups to, GroupAssetSheet assetSheet)
     {
+        player = null;
+        
         SetAssets(assetSheet);
         
         this.source = from;
@@ -59,10 +69,11 @@ public class AgitatorBehaviour: MonoBehaviour
 
     //TODO: When player class added, this takes in player
     //Called by player when player picks up an agitator
-    public void PlayerPickup()
+    public void PlayerPickup(PenguinMovement player)
     {
         //Doesn't need to be removed, player will handle that
-        
+        this.player = player;
+
         //TODO: follows player when player exists
     }
 
@@ -70,5 +81,13 @@ public class AgitatorBehaviour: MonoBehaviour
     public void ReturnToDestination()
     {
         Destroy(gameObject);
+    }
+
+    private void FixedUpdate()
+    {
+        if (player)
+        {
+            transform.position = player.transform.position;
+        }
     }
 }

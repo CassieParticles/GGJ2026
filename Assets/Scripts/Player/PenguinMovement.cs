@@ -28,6 +28,8 @@ public class PenguinMovement : MonoBehaviour
     InputAction leftAction;
     InputAction rightAction;
 
+    //Reference to the agitator that has been taken
+    private AgitatorBehaviour takenAgitator;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Awake()
@@ -90,6 +92,21 @@ public class PenguinMovement : MonoBehaviour
         } else {
             if (isMoving) {
                 groups[(int)currentGroup].PlayerArrive();
+
+                if (!takenAgitator)
+                {
+                    //Take the agitator (if there is one)
+                    takenAgitator = groups[(int)currentGroup].GetAgitator();
+                    if(takenAgitator){ takenAgitator.PlayerPickup(this); }
+                }
+                else
+                {
+                    //Convert from group enum to player enum
+                    if ((int)takenAgitator.Source - 1 == (int)currentGroup)
+                    {
+                        takenAgitator.ReturnToDestination();
+                    }
+                }
             }
             transform.eulerAngles = Vector3.zero;
             isMoving = false;
