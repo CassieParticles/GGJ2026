@@ -26,6 +26,12 @@ public class GroupBehaviour : MonoBehaviour
     [SerializeField] private float angerPlayerDecayRate = 25;
     [SerializeField] private float angerAgitatorBuildRate = 10;
     [SerializeField] private float angerLoseCap = 100;
+
+    [SerializeField] private float soundThreshold = 50;
+    [SerializeField] private float soundReset = 30;
+    [SerializeField] private AK.Wwise.Event angerSound;
+    private bool angerSoundPlaying;
+
     private float anger;
 
     private bool playerPresent;
@@ -77,6 +83,8 @@ public class GroupBehaviour : MonoBehaviour
         
         
         groups.Add(group, this);
+
+        angerSoundPlaying = false;
     }
 
     private void OnValidate()
@@ -134,13 +142,25 @@ public class GroupBehaviour : MonoBehaviour
     {
         //Increase/decrease anger based on if player is present
         anger += (playerPresent ? -angerPlayerDecayRate : angerBuildRate) * Time.fixedDeltaTime;
-        
+
         //Additional anger from agitators
         anger += agitators.Count * angerAgitatorBuildRate * Time.fixedDeltaTime;
 
         if (anger > angerLoseCap)
         {
             loseSignal.Send();
+        }
+
+        if (anger >= soundThreshold && angerSoundPlaying == false)
+        {
+            angerSound.Post(gameObject);
+            angerSoundPlaying = true;
+
+        }
+
+        if (anger <= soundReset &&  angerSoundPlaying == true)
+        {
+            angerSoundPlaying = true;
         }
     }
 }

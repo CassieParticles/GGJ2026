@@ -249,7 +249,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 80a7dfb8db8b8647ac60ad77f25b68e5
     GuidInternal: 
-    m_lastTime: -8584317103357602927
+    m_lastTime: -8584316503532510010
     List:
     - name: main
       guid: 168af79033dc4140847a0d58a7709942
@@ -277,7 +277,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: d4416a7d1a35864fbbec5864971228e1
     GuidInternal: 
-    m_lastTime: -8584317103358210164
+    m_lastTime: -8584316500239798460
     List:
     - name: anger_alligators
       guid: 7dc59608f5cdab478450a5ba4474a46c
@@ -421,7 +421,7 @@ MonoBehaviour:
     m_lastTime: -8584317462438525038
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 0500000006000000070000000f00000010000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
