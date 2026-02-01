@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 28157ac0679b6c4fbd8e4f19ecd0b556
     GuidInternal: 
-    m_lastTime: -8584317094198057397
+    m_lastTime: -8584317077584840267
     List:
     - name: Alligators
       guid: ceafe84e08794542b08c17d73cb733fd
@@ -249,7 +249,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 80a7dfb8db8b8647ac60ad77f25b68e5
     GuidInternal: 
-    m_lastTime: -8584317094197820528
+    m_lastTime: -8584317077584536013
     List:
     - name: main
       guid: 168af79033dc4140847a0d58a7709942
@@ -277,7 +277,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: d4416a7d1a35864fbbec5864971228e1
     GuidInternal: 
-    m_lastTime: -8584317094198384861
+    m_lastTime: -8584317077585193181
     List:
     - name: anger_alligators
       guid: 7dc59608f5cdab478450a5ba4474a46c
@@ -294,8 +294,8 @@ MonoBehaviour:
         guid: 7dc59608f5cdab478450a5ba4474a46c
       Path: Events\Default Work Unit\anger_alligators
       maxAttenuation: 0
-      maxDuration: 3.3750114
-      minDuration: 3.3750114
+      maxDuration: -1
+      minDuration: -1
     - name: anger_bees
       guid: f529ad7de1ea254cb46e51492c40b2c6
       id: 3846074282
@@ -311,8 +311,8 @@ MonoBehaviour:
         guid: f529ad7de1ea254cb46e51492c40b2c6
       Path: Events\Default Work Unit\anger_bees
       maxAttenuation: 0
-      maxDuration: 3.3750114
-      minDuration: 3.3750114
+      maxDuration: -1
+      minDuration: -1
     - name: anger_sharks
       guid: 386c5a011da76647a84469470cc3f106
       id: 140377575
@@ -328,8 +328,8 @@ MonoBehaviour:
         guid: 386c5a011da76647a84469470cc3f106
       Path: Events\Default Work Unit\anger_sharks
       maxAttenuation: 0
-      maxDuration: 3.3750114
-      minDuration: 3.3750114
+      maxDuration: -1
+      minDuration: -1
     - name: anger_skunks
       guid: a490139f822d4048b297ffe39168dbe3
       id: 2049569208
@@ -345,8 +345,8 @@ MonoBehaviour:
         guid: a490139f822d4048b297ffe39168dbe3
       Path: Events\Default Work Unit\anger_skunks
       maxAttenuation: 0
-      maxDuration: 3.3750114
-      minDuration: 3.3750114
+      maxDuration: -1
+      minDuration: -1
     - name: startgame
       guid: 952b72af01fce34f9d258caeaee71ce1
       id: 1521187885
@@ -362,8 +362,8 @@ MonoBehaviour:
         guid: 952b72af01fce34f9d258caeaee71ce1
       Path: Events\Default Work Unit\startgame
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
