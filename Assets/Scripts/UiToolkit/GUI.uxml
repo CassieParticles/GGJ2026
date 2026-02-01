@@ -12,12 +12,12 @@
                     <ui:DataBinding property="value" data-source-path="angerval2" data-source-type="AngerBar, Assembly-CSharp" binding-mode="ToTarget"/>
                 </Bindings>
             </ui:ProgressBar>
-            <ui:ProgressBar value="22" title="Alligator Rage" class="VertBar" style="-unity-font-definition: url(&quot;project://database/Assets/GameAssets/Fonts/Backso.otf?fileID=12800000&amp;guid=16e417947fa729c4fa15daeff85c979e&amp;type=3#Backso&quot;); font-size: 20px; color: rgb(129, 255, 155); align-items: stretch; left: -510px; top: 465px; width: 56%; text-shadow: 2.5px 1.8px 15px rgb(0, 0, 0);">
+            <ui:ProgressBar value="22" title="Alligator Rage" class="VertBar" style="-unity-font-definition: url(&quot;project://database/Assets/GameAssets/Fonts/Backso.otf?fileID=12800000&amp;guid=16e417947fa729c4fa15daeff85c979e&amp;type=3#Backso&quot;); font-size: 20px; color: rgb(52, 201, 150); align-items: stretch; left: -510px; top: 465px; width: 56%; text-shadow: 2.5px 1.8px 15px rgb(0, 0, 0);">
                 <Bindings>
                     <ui:DataBinding property="value" data-source-path="angerval3" data-source-type="AngerBar, Assembly-CSharp" binding-mode="ToTarget"/>
                 </Bindings>
             </ui:ProgressBar>
-            <ui:ProgressBar value="22" title="Bee Rage" name="ProgressBar" class="VertBar" style="left: 1345px; -unity-font-definition: url(&quot;project://database/Assets/GameAssets/Fonts/Backso.otf?fileID=12800000&amp;guid=16e417947fa729c4fa15daeff85c979e&amp;type=3#Backso&quot;); font-size: 20px; color: rgb(255, 217, 78); rotate: 90deg; align-items: stretch; right: 0; top: 430px; width: 56%; -unity-text-align: upper-left; white-space: nowrap; -unity-text-outline-width: 1px; text-shadow: 2.5px 1.8px 15px rgb(0, 0, 0); -unity-text-generator: standard; background-image: none;">
+            <ui:ProgressBar value="22" title="Bee Rage" name="ProgressBar" class="VertBar" style="left: 1345px; -unity-font-definition: url(&quot;project://database/Assets/GameAssets/Fonts/Backso.otf?fileID=12800000&amp;guid=16e417947fa729c4fa15daeff85c979e&amp;type=3#Backso&quot;); font-size: 20px; color: rgb(241, 230, 14); rotate: 90deg; align-items: stretch; right: 0; top: 430px; width: 56%; -unity-text-align: upper-left; white-space: nowrap; -unity-text-outline-width: 1px; text-shadow: 2.5px 1.8px 15px rgb(0, 0, 0); -unity-text-generator: standard; background-image: none;">
                 <Bindings>
                     <ui:DataBinding property="value" data-source-path="angerval1" data-source-type="AngerBar, Assembly-CSharp" binding-mode="ToTarget"/>
                 </Bindings>
