@@ -63,7 +63,17 @@ public class Spawner : MonoBehaviour
         StopCoroutine(spawnCoroutine);
     }
 
-    public IEnumerator Spawn()
+    public void ReturnOptions(Groups from, Groups to)
+    {
+        Option option =  new Option(from, to);
+        if (takenAgitators.Contains(option))
+        {
+            takenAgitators.Remove(option);
+            availableAgitators.Add(option);
+        }
+    }
+
+    private IEnumerator Spawn()
     {
         while (true)
         {
@@ -72,10 +82,13 @@ public class Spawner : MonoBehaviour
         }
     }
 
-    public void SpawnRandom()
+    private void SpawnRandom()
     {
         int randomChoice = Random.Range(0,availableAgitators.Count);
         Option choice = availableAgitators[randomChoice];
+        
+        takenAgitators.Add(choice);
+        availableAgitators.Remove(choice);
 
         spawner.CreateAgitator(choice.from, choice.to);
     }
