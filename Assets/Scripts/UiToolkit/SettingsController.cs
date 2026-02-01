@@ -8,13 +8,13 @@ public class SettingsController : MonoBehaviour
 {
     private UIDocument SetDoc;
     private VisualElement m_root;
-    private bool m_IsOpen;
+    private bool m_IsOpen = false;
     private void Awake()
     {
         SetDoc = gameObject.GetComponent<UIDocument>();
         m_root = SetDoc.rootVisualElement.Q<VisualElement>("Panel");
 
-        Instance = this;
+        //Instance = this;
     }
 
     public void OnMenuButton()
@@ -27,17 +27,19 @@ public class SettingsController : MonoBehaviour
         {
             OpenMenu();
         }
-        m_IsOpen = !m_isOpen;
+        //m_IsOpen = !m_isOpen;
     }
 
     public void OpenMenu()
     {
         Time.timeScale = 0;
         m_root.RemoveFromClassList("hidden");
+        m_IsOpen = true;
     }
     public void CloseMenu()
     {
         Time.timeScale = 1;
         m_root.AddToClassList("hidden");
+        m_IsOpen = false;
     }
 }
