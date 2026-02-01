@@ -1,11 +1,15 @@
-﻿
+
 using System;
 using UnityEngine;
 using UnityEngine.UIElements;
 
 public class AngerBar: MonoBehaviour
 {
-    GroupBehaviour group;
+    [SerializeField] private GroupBehaviour BeeGroup;
+    [SerializeField] private GroupBehaviour SharkGroup;
+    [SerializeField] private GroupBehaviour CrocGroup;
+    [SerializeField] private GroupBehaviour SkunkGroup;
+    
     public VisualElement gui;
     public ProgressBar angerbar1;
     public ProgressBar angerbar2;
@@ -17,14 +21,6 @@ public class AngerBar: MonoBehaviour
     public float angerval4;
     private void Awake()
     {
-        group = GetComponentInParent<GroupBehaviour>();
-        if (!group)
-        {
-            Debug.LogError("ERROR: GROUP NOT LOCATED");
-            gameObject.SetActive(false);
-            return;
-        }
-        
         //TODO: Get GUI bar
         gui = GetComponent<UIDocument>().rootVisualElement;
         Debug.Log("I got the GUI OBJ");
@@ -49,6 +45,8 @@ public class AngerBar: MonoBehaviour
     private void FixedUpdate()
     {
         //TODO: Set GUI bar to value
+        
+        
         // if bar hits zero Lose();
     }
 }
