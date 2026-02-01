@@ -132,6 +132,7 @@ public class GroupBehaviour : MonoBehaviour
     {
         //Increase/decrease anger based on if player is present
         anger += (playerPresent ? -angerPlayerDecayRate : angerBuildRate) * Time.fixedDeltaTime;
+        anger = Mathf.Max(anger, 0);
         
         //Additional anger from agitators
         anger += agitators.Count * angerAgitatorBuildRate * Time.fixedDeltaTime;
