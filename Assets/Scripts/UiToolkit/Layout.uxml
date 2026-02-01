@@ -1,9 +1,9 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <Style src="project://database/Assets/Scripts/UiToolkit/StyleSheet.uss?fileID=7433441132597879392&amp;guid=68c344c5473338d4885ec473c800bbc0&amp;type=3#StyleSheet"/>
-    <ui:VisualElement name="Panel" class="panel" style="flex-grow: 1;">
+    <ui:VisualElement name="Panel" class="panel" style="flex-grow: 1; background-color: rgb(163, 225, 230);">
         <ui:Image name="TitleImage" source="project://database/Assets/GameAssets/EmperorsNewZooMarketing.png?fileID=2800000&amp;guid=99d9fb386ba671449a77ef5ac99c7c7d&amp;type=3#EmperorsNewZooMarketing" scale-mode="ScaleToFit" style="width: 359px; top: -162px; bottom: auto;"/>
         <ui:Button text="Start" name="Start"/>
-        <ui:Button text="Settings" name="Settings"/>
+        <ui:Button text="Settings" name="Settings" class="hide"/>
         <ui:Button text="Exit" name="Exit"/>
     </ui:VisualElement>
 </ui:UXML>
