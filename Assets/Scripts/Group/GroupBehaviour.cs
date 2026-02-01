@@ -19,6 +19,8 @@ public class GroupBehaviour : MonoBehaviour
 {
     [SerializeField] private Groups group;
     [SerializeField] private GroupAssetSheet assetSheet;
+    [SerializeField] private Signal loseSignal;
+    
     
     [SerializeField] private float angerBuildRate = 5;
     [SerializeField] private float angerPlayerDecayRate = 25;
@@ -58,6 +60,13 @@ public class GroupBehaviour : MonoBehaviour
         if (group == Groups.Null)
         {
             Debug.LogError("ERROR: GROUP NOT SET");
+            this.enabled = false;
+            return;
+        }
+
+        if (!loseSignal)
+        {
+            Debug.LogError("ERROR: NO LOSE SIGNAL FOUND");
             this.enabled = false;
             return;
         }
@@ -131,7 +140,7 @@ public class GroupBehaviour : MonoBehaviour
 
         if (anger > angerLoseCap)
         {
-            //TODO: Add losing functionality
+            loseSignal.Send();
         }
     }
 }

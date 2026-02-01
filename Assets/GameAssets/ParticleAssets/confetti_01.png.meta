@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: a219f757a1a5d6f419c7f4365606cadf
+guid: ef6afbd463a69b3438048508acf04f40
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3717796857806572981
-    second: GGJ_shark_0
-  - first:
-      213: 3082504548529183982
-    second: GGJ_shark_1
+      213: 706981572869893939
+    second: confetti_01_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -103,45 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GGJ_shark_0
+      name: confetti_01_0
       rect:
         serializedVersion: 2
-        x: 156
-        y: 191
-        width: 700
-        height: 934
-      alignment: 9
-      pivot: {x: 0.67, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5bdcf906b84489330800000000000000
-      internalID: 3717796857806572981
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GGJ_shark_1
-      rect:
-        serializedVersion: 2
-        x: 597
-        y: 189
-        width: 62
-        height: 18
+        x: 43
+        y: 85
+        width: 750
+        height: 787
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: eec9b991e8147ca20800000000000000
-      internalID: 3082504548529183982
+      spriteID: 33f28a9aef3bfc900800000000000000
+      internalID: 706981572869893939
       vertices: []
       indices: 
       edges: []
@@ -160,8 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      GGJ_shark_0: 3717796857806572981
-      GGJ_shark_1: 3082504548529183982
+      confetti_01_0: 706981572869893939
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

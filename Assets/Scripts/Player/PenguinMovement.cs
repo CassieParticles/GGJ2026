@@ -52,7 +52,7 @@ public class PenguinMovement : MonoBehaviour
             waddleTimer = 0;
             groups[(int)currentGroup].PlayerLeave();
         }
-        targetPos = new Vector2(0, 2);
+        targetPos = new Vector2(0, 1.3f);
         currentGroup = Status.Group1;
     }
     private void RightPressed(InputAction.CallbackContext obj) {
@@ -60,7 +60,7 @@ public class PenguinMovement : MonoBehaviour
             waddleTimer = 0;
             groups[(int)currentGroup].PlayerLeave();
         }
-        targetPos = new Vector2(5, 0);
+        targetPos = new Vector2(4, 0);
         currentGroup = Status.Group2;
     }
 
@@ -69,7 +69,7 @@ public class PenguinMovement : MonoBehaviour
             waddleTimer = 0;
             groups[(int)currentGroup].PlayerLeave();
         }
-        targetPos = new Vector2(0, -2);
+        targetPos = new Vector2(0, -1.3f);
         currentGroup = Status.Group3;
     }
 
@@ -78,7 +78,7 @@ public class PenguinMovement : MonoBehaviour
             waddleTimer = 0;
             groups[(int)currentGroup].PlayerLeave();
         }
-        targetPos = new Vector2(-5, 0);
+        targetPos = new Vector2(-4, 0);
         currentGroup = Status.Group4;
     }
 
