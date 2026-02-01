@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Sharks
   m_EditorClassIdentifier: Assembly-CSharp::GroupAssetSheet
   group: 3
-  personSprite: {fileID: -337746500788874759, guid: 099b95c3392dbff49ba3d51b28644d05, type: 3}
+  personSprite: {fileID: 3717796857806572981, guid: a219f757a1a5d6f419c7f4365606cadf, type: 3}

@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Skunks
   m_EditorClassIdentifier: Assembly-CSharp::GroupAssetSheet
   group: 1
-  personSprite: {fileID: 7303372576848865103, guid: 51313b42a2bdfa6439db31bf92bffd5e, type: 3}
+  personSprite: {fileID: 6135200193063409934, guid: ab1c8115ab1ecd34cbd851b482d5b6b0, type: 3}

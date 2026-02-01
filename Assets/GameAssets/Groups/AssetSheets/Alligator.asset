@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Alligator
   m_EditorClassIdentifier: Assembly-CSharp::GroupAssetSheet
   group: 4
-  personSprite: {fileID: -7922781867503896448, guid: 30380e4b309b8a44e99a01526113a23e, type: 3}
+  personSprite: {fileID: 3646814697113465906, guid: 9781cc72e12f3a747ba94ac545f0934a, type: 3}

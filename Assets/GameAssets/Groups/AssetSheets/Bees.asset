@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Bees
   m_EditorClassIdentifier: Assembly-CSharp::GroupAssetSheet
   group: 2
-  personSprite: {fileID: -8548098251071767425, guid: 2045339c9abd87a41ada2277d0c1849c, type: 3}
+  personSprite: {fileID: 8788160820992908145, guid: 727de6373ed045b4c84b5e5c3fbce33b, type: 3}
