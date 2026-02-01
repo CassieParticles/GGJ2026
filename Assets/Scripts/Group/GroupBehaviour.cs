@@ -25,6 +25,7 @@ public class GroupBehaviour : MonoBehaviour
     [SerializeField] private float angerAgitatorBuildRate = 10;
     [SerializeField] private float angerLoseCap = 100;
     private float anger;
+    public float Anger => anger;
 
     private bool playerPresent;
 
