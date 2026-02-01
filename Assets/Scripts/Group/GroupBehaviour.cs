@@ -93,6 +93,10 @@ public class GroupBehaviour : MonoBehaviour
         return true;
     }
 
+    public Sprite GetAssets() {
+        return assetSheet.PersonSprite;
+    }
+
     //Tell the group the player has arrived
     public void PlayerArrive()
     {
