@@ -45,6 +45,11 @@ public class AngerBar: MonoBehaviour
     private void FixedUpdate()
     {
         //TODO: Set GUI bar to value
+        angerval1 = beeGroup.Anger;
+        angerval2 = sharkGroup.Anger;
+        angerval3 = crocGroup.Anger;
+        angerval4 = skunkGroup.Anger;
+
         beeBar.value = beeGroup.Anger;
         sharkBar.value = sharkGroup.Anger;
         crocBar.value = crocGroup.Anger;
