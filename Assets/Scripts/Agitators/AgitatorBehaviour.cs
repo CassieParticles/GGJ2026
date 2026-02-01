@@ -3,7 +3,6 @@ using System.Collections;
 using UnityEngine;
 
 
-
 [RequireComponent(typeof(SpriteRenderer))]
 public class AgitatorBehaviour: MonoBehaviour
 {
@@ -44,9 +43,10 @@ public class AgitatorBehaviour: MonoBehaviour
 
     private IEnumerator TravelTo()
     {
-        //Wait for travel to be done
+        //TODO: Rework this to be a nicer walk animation
         transform.position = sourceGO.transform.position;
         
+        //Wait for travel to be done
         yield return new WaitForSeconds(3.0f);
         
         //Teleport to destination
