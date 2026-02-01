@@ -121,6 +121,42 @@
 						</Sound>
 					</ChildrenList>
 				</Folder>
+				<Sound Name="mx_zoo_01" ID="{532AAA48-667A-46CF-8F42-EC710CF96E19}" ShortID="336788655">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="12"/>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-10</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3B93908A-531F-4BC1-A2B7-D48CB9B4B0DC}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C07A1528-9B67-4F6C-BD8E-4F19ECD0B556}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="mx_zoo_01" ID="{7C289FDB-79AE-4162-B726-DD5B816B7163}">
+							<PropertyList>
+								<Property Name="LoopBegin" Type="Real64" Value="10.0011007511472"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>mx_zoo_01.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="318343115"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="mx_zoo_01" ID="{7C289FDB-79AE-4162-B726-DD5B816B7163}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

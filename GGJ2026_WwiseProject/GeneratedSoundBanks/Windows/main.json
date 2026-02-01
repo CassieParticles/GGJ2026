@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{90F78A16-DC33-4041-847A-0D58A7709942}",
     "Language": "SFX",
-    "Hash": "{A71D2D0B-8E5B-43B2-8157-323499B0DAEC}",
+    "Hash": "{55C441FB-C5C8-230F-7332-8188E47857DA}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\main",
     "ShortName": "main",
     "Path": "main.bnk",
@@ -30,6 +30,14 @@
       "Location": "Memory",
       "ShortName": "sfx_npc_anger_skunks.wav",
       "CachePath": "B7/{B7D87E44-462E-4B29-4E34-39B0AC8C6E9F}.wem"
+     },
+     {
+      "Id": "318343115",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "mx_zoo_01.wav",
+      "CachePath": "B2/{B2FEC224-0806-EFEA-02A9-036FE6797AF6}.wem"
      },
      {
       "Id": "367421371",
@@ -128,14 +136,16 @@
       "Name": "startgame",
       "ObjectPath": "\\Events\\Default Work Unit\\startgame",
       "GUID": "{AF722B95-FC01-4FE3-9D25-8CAEAEE71CE1}",
-      "MaxAttenuation": "0",
-      "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "318343115"
+       }
+      ]
      }
     ]
    }
   ],
-  "FileHash": "{A34D30B7-D5C0-7D6F-A807-1BA001D4241B}"
+  "FileHash": "{1EFEB5E5-E2E3-7BB9-3125-79C9F6B9B17B}"
  }
 }

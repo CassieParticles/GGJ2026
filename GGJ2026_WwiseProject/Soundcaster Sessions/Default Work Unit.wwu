@@ -1,6 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{7F5DDC1B-E83E-4F5A-816D-CAD52FB10E06}" SchemaVersion="123">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{7F5DDC1B-E83E-4F5A-816D-CAD52FB10E06}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{7F5DDC1B-E83E-4F5A-816D-CAD52FB10E06}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="GGJ2026" ID="{20BE811E-6E6C-4F83-93B6-736576B89A40}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="sfx_npc_anger_alligators" ID="{3124A0C2-2772-453B-83D8-2C02C9D88AB8}" WorkUnitID="{2EA5D969-6C4E-4CD0-A1E8-8A96277311CF}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="mx_zoo_01" ID="{532AAA48-667A-46CF-8F42-EC710CF96E19}" WorkUnitID="{2EA5D969-6C4E-4CD0-A1E8-8A96277311CF}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="sfx_npc_anger_bees" ID="{B74D47D4-093F-4446-BB9F-90AB36A0C316}" WorkUnitID="{2EA5D969-6C4E-4CD0-A1E8-8A96277311CF}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="sfx_npc_anger_sharks" ID="{FCBF4E65-5E78-44B1-BF9D-56A1D733990D}" WorkUnitID="{2EA5D969-6C4E-4CD0-A1E8-8A96277311CF}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="sfx_npc_anger_skunks" ID="{ECB3C672-F55C-4B75-ABCD-ADEDF8B8246E}" WorkUnitID="{2EA5D969-6C4E-4CD0-A1E8-8A96277311CF}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>
