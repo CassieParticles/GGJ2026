@@ -9,8 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d48d85914024f899b6598c525a0021a, type: 3}
-  m_Name: Sharks
-  m_EditorClassIdentifier: Assembly-CSharp::GroupAssetSheet
-  group: 3
-  personSprite: {fileID: 3717796857806572981, guid: a219f757a1a5d6f419c7f4365606cadf, type: 3}
+  m_Script: {fileID: 11500000, guid: 252b1a7ffb9d422ab91268c4b0e1cc7d, type: 3}
+  m_Name: Lose
+  m_EditorClassIdentifier: Assembly-CSharp::Signal

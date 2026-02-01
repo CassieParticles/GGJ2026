@@ -1,0 +1,9 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Scripts/UiToolkit/LoseStyle.uss?fileID=7433441132597879392&amp;guid=d80690df11eff414c97fc132cfe72dd2&amp;type=3#LoseStyle"/>
+    <ui:VisualElement name="panel" class="panel">
+        <ui:VisualElement name="ButBox" class="ButBox" style="flex-grow: 1;">
+            <ui:Button text="Play Again" name="Play"/>
+            <ui:Button text="Quit" name="Quit" style="white-space: nowrap;"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

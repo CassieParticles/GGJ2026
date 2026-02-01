@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4a16baad0bdbe5649b0b17148e198717
+guid: 51f8e515f0dc06748b4294f2040ae9cd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2014209655941666411
-    second: PenguinPolished2_0
+      213: -6818421181295498398
+    second: BACKGROUND_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PenguinPolished2_0
+      name: BACKGROUND_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 36
-        width: 777
-        height: 992
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5996f6a5df61c04e0800000000000000
-      internalID: -2014209655941666411
+      spriteID: 26be1e7af0a1061a0800000000000000
+      internalID: -6818421181295498398
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: cec9379ec3652e84f8847162d8f2a6c7
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      PenguinPolished2_0: -2014209655941666411
+      BACKGROUND_0: -6818421181295498398
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
