@@ -12,5 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76bf746b563f457aa70cec956f75aff0, type: 3}
   m_Name: Spawner
   m_EditorClassIdentifier: Assembly-CSharp::AgitatorSpawner
-  agitatorPrefab: {fileID: 0}
-  groupAssetSheets: []
+  agitatorPrefab: {fileID: -6991150961726261326, guid: 5a55040acb658c64aad023a0492989e5, type: 3}
+  groupAssetSheets:
+  - {fileID: 11400000, guid: 71594cc3218a4ec429fd97393107b2a5, type: 2}
+  - {fileID: 11400000, guid: ac71ddb7a6dea434a8d370eae4455b71, type: 2}
+  - {fileID: 11400000, guid: 86f1fa2e251bf3a439a15b98fccaca08, type: 2}
+  - {fileID: 11400000, guid: 0f4887b279ae39149b1776ec589a4fd7, type: 2}
