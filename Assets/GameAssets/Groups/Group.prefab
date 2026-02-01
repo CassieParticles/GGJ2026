@@ -107,7 +107,7 @@ MonoBehaviour:
   group: 0
   assetSheet: {fileID: 0}
   loseSignal: {fileID: 11400000, guid: 4537a763350b37a438eb3fc4625c90fd, type: 2}
-  angerBuildRate: 10
-  angerPlayerDecayRate: 20
-  angerAgitatorBuildRate: 15
+  angerBuildRate: 5
+  angerPlayerDecayRate: 25
+  angerAgitatorBuildRate: 10
   angerLoseCap: 100
