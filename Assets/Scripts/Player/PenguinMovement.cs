@@ -15,7 +15,7 @@ public class PenguinMovement : MonoBehaviour
 
     [SerializeField] float movementSpeed = 5f;
     [SerializeField] float waddleSpeed = 5f;
-    Vector3 targetPos = new Vector2(0, 2);
+    Vector3 targetPos = new Vector2(0, 1.3f);
     bool isMoving = false;
     float waddleTimer = 0f; //Purely visual waddle
 
