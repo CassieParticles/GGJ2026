@@ -19,6 +19,11 @@ public class GroupMemberScript : MonoBehaviour
         
         baseScale = transform.localScale;
 
+        if (gameObject.GetComponentInParent<GroupBehaviour>() != null) {
+            GetComponent<SpriteRenderer>().sprite = gameObject.GetComponentInParent<GroupBehaviour>().GetAssets();
+        }
+
+
     }
 
     // Update is called once per frame
